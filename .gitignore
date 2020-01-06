@@ -1,0 +1,9 @@
+.DS_Store
+/_tmp/
+/cache/
+/build_local/
+/node_modules/
+/vendor/
+.phpunit.result.cache
+.php_cs.cache
+.idea
