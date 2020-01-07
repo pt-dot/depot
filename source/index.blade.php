@@ -8,7 +8,7 @@
 
             <h2 id="intro-powered-by-jigsaw" class="font-light mt-4">{{ $page->siteDescription }}</h2>
 
-            <p class="text-lg">Being Sentimental Engineer means bringing value to our customer and our engineer itself. <br class="hidden sm:block">Growth, Professional, and Don't forget to have fun.</p>
+            <p class="text-lg">Being Sentimental Engineer means bringing value to our customer and our self. <br class="hidden sm:block">Growth, professional, and don't forget to have fun.</p>
 
             <div class="flex my-10">
                 <a href="/docs/getting-started" title="{{ $page->siteName }} getting started" class="bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">Get Started</a>
@@ -28,23 +28,23 @@
 
             <h3 id="intro-laravel" class="text-2xl text-blue-900 mb-0">What is DEPOT</h3>
 
-            <p>DEPOT or DOT Engineering Portal is a portal that contain all engineering resources, handbook or guideline for all DOT Indonesia's Rangers. <br>Built with openess so everyone can contribute to make this site better.</p>
+            <p>DEPOT or DOT Engineering Portal is a portal that contain all engineering resources, handbook or guideline for all DOT Indonesia's Rangers.</p>
         </div>
 
         <div class="mb-8 mx-3 px-2 md:w-1/3">
             <img src="/assets/img/icon-terminal.svg" class="h-12 w-12" alt="terminal icon">
 
-            <h3 id="intro-markdown" class="text-2xl text-blue-900 mb-0">Lorem Ipsum</h3>
+            <h3 id="intro-markdown" class="text-2xl text-blue-900 mb-0">Everyone Can Contribute</h3>
 
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>With the spirit of openess, we encourage our ranger to contribute for bringing more value to our guidelines.</p>
         </div>
 
         <div class="mx-3 px-2 md:w-1/3">
             <img src="/assets/img/icon-stack.svg" class="h-12 w-12" alt="stack icon">
 
-            <h3 id="intro-mix" class="text-2xl text-blue-900 mb-0">Lorem Ipsum </h3>
+            <h3 id="intro-mix" class="text-2xl text-blue-900 mb-0">Complete Guidelines </h3>
 
-            <p>Lorem Ipsum Dolor Sit Amet.</p>
+            <p>We want to provide more valuable guidelines so our Ranger won't get lost or easily adjust company's vision to our ranger.</p>
         </div>
     </div>
 </section>
