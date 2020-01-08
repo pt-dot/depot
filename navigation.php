@@ -2,15 +2,14 @@
 
 return [
     'Company' => [
-        'url' => 'docs/company/profile',
         'children' => [
+            'Profile' => 'docs/company/profile',
             'Department & Division' => 'docs/company/department',
             'People, Role, & Title' => 'docs/company/people-title',
             'Publication & Social Media' => 'docs/company/publications',
         ],
     ],
     'Working at DOT Indonesia' => [
-        'url' => 'docs/working-at-dot/index',
         'children' => [
             'On Boarding' => 'docs/working-at-dot/onboarding',
             'Code of Conduct' => 'docs/working-at-dot/code-of-conduct',
@@ -23,7 +22,6 @@ return [
         ]
     ],
     'Project Management' => [
-        'url' => 'docs/project/index',
         'children' => [
             'Development Workflow' => 'docs/project/development-workflow',
             'Requirement Gathering' => 'docs/project/requirement-gathering',
@@ -35,7 +33,6 @@ return [
         ]
     ],
     'Engineering' => [
-        'url' => 'docs/engineering/index',
         'children' => [
             'Development Stack & Tools' => 'docs/engineering/stack-tools',
             'Gitflow' => 'docs/engineering/gitflow',
@@ -54,7 +51,6 @@ return [
         ]
     ],
     'Activities' => [
-        'url' => 'docs/getting-started',
         'children' => [
             'Community' => 'docs/activities/community',
             'Teaching' => 'docs/activities/teaching',
