@@ -4,7 +4,7 @@ return [
     'baseUrl' => '',
     'production' => false,
     'siteName' => 'DEPOT - DOT Engineering Portal',
-    'siteDescription' => 'All in one engineering resources for DOT Ranger',
+    'siteDescription' => 'All in one DOT engineering resources.',
 
     // Algolia DocSearch credentials
     'docsearchApiKey' => '',

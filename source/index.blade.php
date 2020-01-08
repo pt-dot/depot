@@ -28,7 +28,7 @@
 
             <h3 id="intro-laravel" class="text-2xl text-blue-900 mb-0">What is DEPOT</h3>
 
-            <p>DEPOT or DOT Engineering Portal is a portal that contain all engineering resources, handbook or guideline for all DOT Indonesia's Rangers.</p>
+            <p>DEPOT or DOT Engineering Portal is a portal that contain all engineering resources, handbook or guideline</p>
         </div>
 
         <div class="mb-8 mx-3 px-2 md:w-1/3">
