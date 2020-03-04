@@ -5,7 +5,7 @@ return [
         'children' => [
             'Profile' => 'docs/company/profile',
             'Departemen & Divisi' => 'docs/company/department',
-            'Ranger, Peran, & Jabatan' => 'docs/company/people-title',
+            'Ranger dan Peran' => 'docs/company/people-title',
             'Publikasi & Sosial Media' => 'docs/company/publications',
         ],
     ],
