@@ -36,7 +36,7 @@ return [
         'children' => [
             'Development Stack & Tools' => 'docs/engineering/stack-tools',
             'Penggunaan Git' => 'docs/engineering/gitflow',
-            'Klasifikasi Isu' => 'docs/engineering/issue',
+            'Klasifikasi Isu' => 'docs/engineering/issue-classifications',
             'Panduan PHP & Laravel' => 'docs/engineering/php-laravel-guidelines',
             'Panduan .NET' => 'docs/engineering/net-guidelines',
             'RESTFul API Standard' => 'docs/engineering/restful-api-standard',
