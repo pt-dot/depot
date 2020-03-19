@@ -35,7 +35,7 @@ return [
     'Engineering' => [
         'children' => [
             'Development Stack & Tools' => 'docs/engineering/stack-tools',
-            'Gitflow' => 'docs/engineering/gitflow',
+            'Penggunaan Git' => 'docs/engineering/gitflow',
             'Klasifikasi Isu' => 'docs/engineering/issue',
             'Panduan PHP & Laravel' => 'docs/engineering/php-laravel-guidelines',
             'Panduan .NET' => 'docs/engineering/net-guidelines',
