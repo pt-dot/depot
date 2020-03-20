@@ -38,7 +38,7 @@ return [
             'Penggunaan Git' => 'docs/engineering/gitflow',
             'Klasifikasi Isu' => 'docs/engineering/issue-classifications',
             'Panduan PHP & Laravel' => 'docs/engineering/php-laravel-guidelines',
-            'Panduan .NET' => 'docs/engineering/net-guidelines',
+            // 'Panduan .NET' => 'docs/engineering/net-guidelines',
             'RESTFul API Standard' => 'docs/engineering/restful-api-standard',
             'Panduan Database' => 'docs/engineering/database-guidelines',
             'Panduan Frontend' => 'docs/engineering/frontend-guidelines',
