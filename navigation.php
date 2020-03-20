@@ -38,29 +38,27 @@ return [
             'Penggunaan Git' => 'docs/engineering/gitflow',
             'Klasifikasi Isu' => 'docs/engineering/issue-classifications',
             'Panduan PHP & Laravel' => 'docs/engineering/php-laravel-guidelines',
-            // 'Panduan .NET' => 'docs/engineering/net-guidelines',
             'RESTFul API Standard' => 'docs/engineering/restful-api-standard',
-            'Panduan Database' => 'docs/engineering/database-guidelines',
-            'Panduan Frontend' => 'docs/engineering/frontend-guidelines',
-            'Panduan Mobile' => 'docs/engineering/mobile-guidelines',
+            'Panduan Database Engineering' => 'docs/engineering/database-guidelines',
+            'Panduan Frontend Engineering' => 'docs/engineering/frontend-guidelines',
+            'Panduan Mobile Engineering' => 'docs/engineering/mobile-guidelines',
             'Panduan Quality Assurance' => 'docs/engineering/quality-assurance-guidelines',
             'Deployment' => 'docs/engineering/deployment',
             'Code Review' => 'docs/engineering/code-review',
-            'Pengujian Aplikasi' => 'docs/engineering/testing',
             'Error Monitoring' => 'docs/engineering/error-monitoring'
         ]
     ],
-    'Kegiatan' => [
-        'children' => [
-            'Komunitas' => 'docs/activities/community',
-            'Pengajar' => 'docs/activities/teaching',
-            'Teaching Factory' => 'docs/activities/teaching-factory',
-            'Retrospective Tahunan' => 'docs/activities/annual-retrospective',
-            'Techtalk & Lifetalk' => 'docs/activities/techtalk',
-            'Workshop & Sharing' => 'docs/activities/workshop',
-            'Outing' => 'docs/activities/outing'
-        ]
-    ],
-    'F.A.Q' => 'docs/faq',
+    // 'Kegiatan' => [
+    //     'children' => [
+    //         'Komunitas' => 'docs/activities/community',
+    //         'Pengajar' => 'docs/activities/teaching',
+    //         'Teaching Factory' => 'docs/activities/teaching-factory',
+    //         'Retrospective Tahunan' => 'docs/activities/annual-retrospective',
+    //         'Techtalk & Lifetalk' => 'docs/activities/techtalk',
+    //         'Workshop & Sharing' => 'docs/activities/workshop',
+    //         'Outing' => 'docs/activities/outing'
+    //     ]
+    // ],
+    // 'F.A.Q' => 'docs/faq',
     'DOT Indonesia' => 'https://dot.co.id/',
 ];
