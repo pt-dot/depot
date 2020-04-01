@@ -2,7 +2,7 @@
 use Illuminate\Support\Str;
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'https://depot-dev.netlify.com/',
     'production' => false,
     'siteName' => 'DEPOT - DOT Engineering Portal',
     'siteDescription' => 'All in one DOT engineering resources.',
