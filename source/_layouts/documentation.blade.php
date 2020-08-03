@@ -12,7 +12,9 @@
         </nav>
 
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
-            @yield('content')
+            <article class="prose prose-sm max-w-none">
+                @yield('content')
+            </article>
         </div>
     </div>
 </section>
