@@ -46,9 +46,9 @@ Dan kumpulan `images` dari suatu `product` adalah:
 
 ## Format Request
 
-Pada umumnya format request menggunakan format `Content-type`: `application/json` untuk `POST / PUT / PATCH`, kecuali untuk data yang memiliki data binary (gambar, pdf, docx, dll) menggunakan format `form-data`.
+Secara default data yang dikembalikan melalui RESTful API adalah memiliki format `JSON` sehingga pada header suatu request haruslah memiliki attribute `Accept: application/json`. Pada umumnya format request menggunakan format `Content-type`: `application/json` untuk `POST / PUT / PATCH`, kecuali untuk data yang memiliki data binary (gambar, pdf, docx, dll) menggunakan format `form-data`.
 
-Beberapa *endpoint* API dilindungi oleh sebuah *authorization* yang biasanya hanya bisa diakses menggunakan **token** (umumnnya menggunakan [JWT - JSON Web Token](https://jwt.io/)) pada header request.
+Beberapa *endpoint* API dilindungi oleh sebuah *authorization* yang biasanya hanya bisa diakses menggunakan **token** (umumnnya menggunakan [JWT - JSON Web Token](https://jwt.io/) atau personal access token jika menggunakan [Laravel Sanctum](https://laravel.com/docs/7.x/sanctum)) pada header request.
 
 ```
 Authorization: Bearer <token>
@@ -69,11 +69,13 @@ DOT Indonesia menentukan `JSON` sebagai format response secara umum. Kecuali ada
 
 * `data`: merupakan bagian dari data utama baik berupa *single object* atau *collection of objects*
 * `errors`: sebuah `array` dari kumpulan obyek *error*.
+* `message`: Pesan berupa string sebagai informasi endpoint
 
 ### Success Response
 
 Data utama **HARUS** berupa:
 
+* Sebuah `message` untuk menampilkan pesan dari hasil suatu aksi pada endpoint
 * Sebuah `resource object` atau `null`, untuk *request* yang membutuhkan satu `resource`
 * Sebuah `array` dari banyak `resource object` atau `array` kosong (`[]`), untuk *request* yang membutuhkan lebih dari satu `resource.
 
@@ -81,7 +83,6 @@ Sebagai contoh , data utama berikut berupa sebuah `resource object`:
 
 ```json
 {
-    "success": true,
     "message": "This is successful message",
     "data": {
         "id": 1,
@@ -95,7 +96,6 @@ Format berikut ini berupa kumpulan banyak `resource object` yang ada dalam `arra
 
 ```json
 {
-    "success": true,
     "message": "This is successful message",
     "data": [
         {
@@ -112,43 +112,100 @@ Format berikut ini berupa kumpulan banyak `resource object` yang ada dalam `arra
 }
 ```
 
-Atribut `message` adalah **OPSIONAL** dan dapat disertakan jika merasa perlu menampilkan sebuah pesan yang disertakan dalam sebuah dokumen *response.
-
 ### Failed Response
 
 Terkadang *server* terhenti karena mengalami masalah saat melakukan pemrosesan *request*, atau pemrosesan tetap berlanjut tapi menghasilkan beberapa permasalahan. Sebagai contoh, *server* melakukan pemrosesan beberapa `attribute` kemudian mengembalikan beberapa masalah validasi dalam sebuah *response*.
 
-#### Error Objects
+#### Response Guideline
 
-`Error Objects` menyediakan informasi tambahan tentang permasalahan yang terjadi ketika *server* melakukan pemrosesan *request*. Obyek *error* **HARUS** dikembalikan dalam bentuk sebuah `array` yang berisi *error* berupa `key` dalam `array` tersebut.
-
-Contoh berikut biasanya digunakan untuk *response* gagal dengan status `400`, `401`, `404`, atau `500`:
+Contoh berikut biasanya digunakan untuk *response* gagal dengan status `400`, `401`:
 
 ```json
 {
-    "success": false,
-    "error-code": null, /* or optional error payload, eg: 3001, 3002, etc. */
+    "message": "This is error message",
     "errors": [],
-    "message": "Error xyz has occurred"
 }
 ```
 
-Untuk *response* yang mengembalikan beberapa masalah validasi **HARUS** mengembalikan pesan *error* di dalam `array`. 
-
-Contoh berikut digunakan untuk format *response* dengan beberapa *error* pada hasil validasi:
+Sedangkan untuk *response* gagal untuk status `404`, `50x` terdapat attribute pendukung untuk keperluan stack trace.
 
 ```json
 {
-    "success": false,
-    "error-code": null, /* or optional error payload, eg: 3001, 3002, etc. */
+    "message": "Method Illuminate\\Http\\Request::svalidate does not exist.",
+    "exception": "BadMethodCallException",
+    "file": "/Users/dot/Didik/playground/project/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php",
+    "line": 103,
+    "trace": [
+        {
+            "file": "/Users/dot/Didik/playground/project/app/Http/Controllers/Api/V1/Auth/CustomerAuthenticationController.php",
+            "line": 22,
+            "function": "__call",
+            "class": "Illuminate\\Http\\Request",
+            "type": "->"
+        },
+        {
+            "function": "__invoke",
+            "class": "App\\Http\\Controllers\\Api\\V1\\Auth\\CustomerAuthenticationController",
+            "type": "->"
+        }
+    ]
+}
+
+```
+
+#### Contoh Response
+
++ `422 Unprocessable Entity`
+
+```json
+{
+    "message": "The given data was invalid.",
     "errors": {
-        "email": "The email must be a valid email",
-        "password": "The password must be at least 6 chaarcters",
-        "phone": "The phone number is already used"
-    },
-    "message": "Error xyz has occurred"
+        "email": [
+            "The email must be a valid email address."
+        ],
+        "device_name": [
+            "The device name field is required."
+        ]
+    }
 }
 ```
+
++ `401 Unauthenticate`
+
+```json
+{
+    "message": "Unauthenticated user.",
+    "errors": []
+}
+```
+
++ General Error Response
+
+```json
+{
+    "message": "Method Illuminate\\Http\\Request::svalidate does not exist.",
+    "exception": "BadMethodCallException",
+    "file": "/Users/dot/Didik/playground/project/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php",
+    "line": 103,
+    "trace": [
+        {
+            "file": "/Users/dot/Didik/playground/project/app/Http/Controllers/Api/V1/Auth/CustomerAuthenticationController.php",
+            "line": 22,
+            "function": "__call",
+            "class": "Illuminate\\Http\\Request",
+            "type": "->"
+        },
+        {
+            "function": "__invoke",
+            "class": "App\\Http\\Controllers\\Api\\V1\\Auth\\CustomerAuthenticationController",
+            "type": "->"
+        }
+    ]
+}
+```
+
+> Failed Response di atas hampir seluruhnya sudah di handle oleh Laravel (Saat dokumentasi ini dibuat, menggunakan Laravel 7) sehingga output di atas juga merupakan output yang dihasilkan dari Laravel itu sendiri. Kecuali untuk Unauthenticated ada bagian yang di extend.
 
 ## HTTP Response Code
 
