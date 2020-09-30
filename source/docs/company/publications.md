@@ -15,3 +15,4 @@ Tidak hanya fokus dengan bisnis, DOT Indonesia juga memiliki komitmen untuk berb
 4. Facebook [DOT Indonesia](https://www.facebook.com/dotindonesia/)
 5. Linkedin [DOT Indonesia](https://www.linkedin.com/company/dot-indonesia/)
 6. Instagram DOT Indonesia di [@dot.indonesia](https://www.instagram.com/dot.indonesia/)
+7. [Engineering Guideline](https://depot-dev.netlify.app/)
