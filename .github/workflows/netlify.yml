@@ -1,0 +1,57 @@
+name: Netlify CI/CD
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    name: Build code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup node.js
+        uses: actions/setup-node@v1.4.3
+        with:
+          node-version: '12'
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+      - name: Get caches
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            vendor
+          key: ${{ runner.os }}-build-caches
+      - name: Install node dependencies
+        run: yarn install
+      - name: Install PHP dependencies
+        run: composer install
+      - name: Build site with production mode
+        run: yarn run production
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: build_production
+          path: build_production
+
+  deploy:
+    name: Deploy to Netlify
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: build_production
+          path: build_production
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.1
+        with:
+          publish-dir: './build_production'
+          production-deploy: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
