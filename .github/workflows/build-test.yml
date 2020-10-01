@@ -1,0 +1,32 @@
+name: Test build on PR
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    name: Build code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup node.js
+        uses: actions/setup-node@v1.4.3
+        with:
+          node-version: '12'
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+      - name: Get caches
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            vendor
+          key: ${{ runner.os }}-build-caches
+      - name: Install node dependencies
+        run: yarn install
+      - name: Install PHP dependencies
+        run: composer install
+      - name: Build site with production mode
+        run: yarn run production
