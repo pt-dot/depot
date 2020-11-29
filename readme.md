@@ -21,7 +21,7 @@ Check detail at [Jigsaw System Requirement](https://jigsaw.tighten.co/docs/insta
 1. Clone DEPOT Repository
 
 ```bash
-git clone -b develop https://gitlab.com/pt-dot-internal/depot.git
+git clone https://github.com/pt-dot/depot.git
 ```
 
 2. Navigate to DEPOT's directory then run composer for installation
@@ -85,11 +85,18 @@ npm run dev
 ```
 ---
 
+## Deploying Site
+
+Currently this site is hosted using [Netlify](https://www.netlify.com/) and you may access it at [Depot](https://depot-dev.netlify.com/). This repo is deployed using Github Actions and to deployed it automatically, setup `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` to repo settings. Just make sure you have Netlify is already setup with `master` branch deployed configuration.
+
+> If you want to host with your version site to another Netlify host, fork this repo and setup your Netlify configuration
+
 ## Contribution
 
 All DOT's Ranger may contribute to fix, ask question, or propose a handbook into DEPOT Platform.
 
-1. Ask a Question: Open Gitlab issue and explain your question
-2. Fix or propose content: Make Gitlab Merge Request and explain your fix
-3. Management will review your MR or issue.
+1. Ask a Question: Open Github issue and explain your question
+2. Fix or propose content: Fork repo, make Pull Request and explain your fix
+3. Management will review your PR or issue.
+4. For non DOT's Ranger, you can submit PR to fix minor issue such as typo or UI glitch, etc.
 
