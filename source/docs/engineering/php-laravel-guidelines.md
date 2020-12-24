@@ -127,13 +127,13 @@ class Foo extends Bar implements FooInterface
 c. Jika menggunakan autoloading, ikuti standard [PSR-4: Autoloading](http://www.php-fig.org/psr/psr-4/)
 
 d. Agar source code lebih mudah dibaca dan dipahami sertakan `DockBlock` pada fungsi atau attribute. Manfaatkan DockBlock untuk menginformasikan proses, variable, dan output yang digunakan. Acuan penggunaan DockBlock dapat dilihat di [PHPDOC - DOCKBLOCK Basic Syntax](http://docs.phpdoc.org/references/phpdoc/basic-syntax.html)
-    
+
 Overview:
 ```php
 <?php
 
 class Foo {
-    
+
     /**
     * @var string
     */
@@ -168,7 +168,7 @@ Overview:
 <?php
 
 class Foo {
-    
+
     /**
     * This is description of this class
     * this class may use recursion bla bla bla
@@ -182,7 +182,7 @@ class Foo {
         // some code
 
     }
-    
+
     //public function deadcode($arg1, $arg2)
     //{
     // some DEAD CODE
@@ -214,9 +214,10 @@ try {
     // operation success, then commit transaction
     DB::commit();
     return true;
-} catch(\Exception $e) {
-    // if error happened, rollback transaction
+} catch(\Exception $exception) {
+    // if error happened, rollback transaction & report this error
     DB::rollback();
+    report($exception);
     return false;
 }
 ```
@@ -233,9 +234,9 @@ simple case:
 │   │   │   ├── OrderManagement
 │   │   │   │   ├── OrderController.php
 │   │   │   │   ├── ReportOrderController.php
-├── Model
-│   ├── User.php
-│   ├── Order.php
+│   ├── Models
+│   │   ├── User.php
+│   │   ├── Order.php
 ├── resources
 │   ├── views
 │   │   ├── dashboard
@@ -261,7 +262,7 @@ e. Gunakan perintah berikut untuk optimasi saat deployment Laravel terutama di s
 ```bash
 php artisan route:cache
 php artisan config:cache
-composer dumpautoload --classmap-authoritative
+composer dump-autoload --classmap-authoritative
 ```
 > khusus untuk `route:cache` tidak boleh ada fungsi closure pada file route
 
@@ -272,7 +273,7 @@ g. Gunakan `eager loading` untuk optimasi penggunaan relationship di eloquent. B
 h. Selalu gunakan `migration` untuk pembuatan atau modifikasi skema database saat development baik itu menambah kolom, edit kolom, hapus kolom, atau modifikasi index. Metode ini lebih baik daripada merubah satu file migration lalu menjalankan perintah `php artisan migrate:rollback` lalu `php artisan migrate` lagi. Baca implementasi [migration](https://laravel.com/docs/5.6/migrations)
 
 i. Dalam kasus tertentu pengambilan data menggunakan `Eloquent` akan memakan terlalu banyak resource. Bentuk optimalisasinya bisa dari salah satu cara berikut:
-    
+
 + Ganti `relationship` dengan menggunakan operasi `join` sehingga query cukup dijalankan satu kali.
 + Ganti operasi menggunakan `Query Builder`
 
