@@ -1,9 +1,8 @@
 # DEPOT - DOT Engineering Portal
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/05f56fe4-91fa-401d-9f9e-b67b49cd5add/deploy-status)](https://app.netlify.com/sites/depot-dev/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e4625074-3920-46a7-a67f-c2ab3e573fc5/deploy-status)](https://app.netlify.com/sites/dot-depot/deploys)
 
 DEPOT is built with an amazing static site from [Jigsaw](https://jigsaw.tighten.co/).
-
 
 ## Installation
 
@@ -87,9 +86,11 @@ npm run dev
 
 ## Deploying Site
 
-Currently this site is hosted using [Netlify](https://www.netlify.com/) and you may access it at [Depot](https://depot-dev.netlify.com/). This repo is deployed using Github Actions and to deployed it automatically, setup `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` to repo settings. Just make sure you have Netlify is already setup with `master` branch deployed configuration.
+Currently this site is hosted using [Netlify](https://www.netlify.com/) and you may access it at [DEPOT](https://depot.dot.co.id/).
 
-> If you want to host with your version site to another Netlify host, fork this repo and setup your Netlify configuration
+> If you want to host with your version site to another Netlify host, click Deploy to Netlify button
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/pt-dot/depot)  
 
 ## Contribution
 
@@ -99,4 +100,3 @@ All DOT's Ranger may contribute to fix, ask question, or propose a handbook into
 2. Fix or propose content: Fork repo, make Pull Request and explain your fix
 3. Management will review your PR or issue.
 4. For non DOT's Ranger, you can submit PR to fix minor issue such as typo or UI glitch, etc.
-
