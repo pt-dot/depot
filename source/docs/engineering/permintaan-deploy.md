@@ -7,9 +7,7 @@ section: content
 
 # Permintaan Deploy Aplikasi
 
-Panduan ini merupakan sebuah standar bagi backend engineer DOT Indonesia atau vendor yang menggunakan PHP atau framework PHP sebagai server side programming.
-
-Kunjungi [Development Stack & Tools](stack-tools) untuk melihat daftar aplikasi dan perangkat development yang dibutuhkan
+Panduan ini dibuat oleh tim DevOps Engineer DOT Indonesia yang berisi tentang prosedur permintaan deploy APP. Di harapkan untuk memahami panduan ini sebelum melakukan permintaan deploy APP kepada tim DevOps Engineer.
 
 ---
 
