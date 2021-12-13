@@ -15,10 +15,10 @@ Panduan ini dibuat oleh tim DevOps Engineer DOT Indonesia yang berisi tentang pr
 
 Saat request untuk melakukan deployment ke server developer wajib telah menyediakan beberapa poin berikut:
 
-- Stack/Requirement aplikasi yang hendak di deploy↩
-- Langkah deployment dari aplikasi yang hendak di deploy↩
-- Menyebutkan apakah CI/CD perlu diaktifkan↩
-- Menyebutkan developer yang bisa dihubungi jika terdapat kendala saat proses deployment↩
+- Stack/Requirement aplikasi yang hendak di deploy
+- Langkah deployment dari aplikasi yang hendak di deploy
+- Menyebutkan apakah CI/CD perlu diaktifkan
+- Menyebutkan developer yang bisa dihubungi jika terdapat kendala saat proses deployment
 
 ---
 
@@ -48,6 +48,7 @@ Tuliskan langkah deployment yang harus dilakukan pada aplikasi. Tuliskan langkah
 ## 5. Penamaan Ansible Playbook 
 
 Untuk mempermudah dan mempercepat proses development, developer dapat melakukan permintaan untuk menambahkan CI/CD.
+
 - Apabila permintaan deployment tidak menyebutkan CI/CD diaktifkan atau tidak maka CI/CD tidak akan diaktifkan.
 - Apabila permintaan CI/CD tidak disertai dengan job apa saja yang dijalankan maka CI/CD akan dibuat hanya untuk mendeploy aplikasi ke server.
 
