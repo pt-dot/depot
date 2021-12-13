@@ -46,7 +46,9 @@ return [
             'Panduan Quality Assurance' => 'docs/engineering/quality-assurance-guidelines',
             'Deployment' => 'docs/engineering/deployment',
             'Code Review' => 'docs/engineering/code-review',
-            'Error Monitoring' => 'docs/engineering/error-monitoring'
+            'Error Monitoring' => 'docs/engineering/error-monitoring',
+            'SOP Deployment APP' => 'docs/engineering/sop-deployment',
+            'Permintaan Deploy APP' => 'docs/engineering/permintaan-deploy'
         ]
     ],
     // 'Kegiatan' => [
