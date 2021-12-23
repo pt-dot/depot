@@ -45,7 +45,7 @@ Tuliskan langkah deployment yang harus dilakukan pada aplikasi. Tuliskan langkah
 
 ---
 
-## 5. Penamaan Ansible Playbook 
+## 5. Menyebutkan apakah CI/CD perlu diaktifkan
 
 Untuk mempermudah dan mempercepat proses development, developer dapat melakukan permintaan untuk menambahkan CI/CD.
 
