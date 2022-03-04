@@ -64,4 +64,6 @@ return [
     // ],
     // 'F.A.Q' => 'docs/faq',
     'DOT Indonesia' => 'https://dot.co.id/',
+    'Career' => 'https://career.dot.co.id/',
+    'Blog' => 'https://blog.dot.co.id/',
 ];
