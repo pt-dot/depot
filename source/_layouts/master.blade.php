@@ -52,7 +52,7 @@
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                         <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.png" alt="{{ $page->siteName }} logo" />
 
-                        <h1 class="text-lg md:text-2xl text-blue-900 font-semibold hover:text-blue-600 my-0 pr-4">{{ $page->siteName }}</h1>
+                        <h1 class="text-lg md:text-2xl text-brand-900 font-semibold hover:text-brand-600 my-0 pr-4">{{ $page->siteName }}</h1>
                     </a>
                 </div>
 

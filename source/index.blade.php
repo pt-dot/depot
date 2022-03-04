@@ -11,7 +11,7 @@
             <p class="text-lg">Tempat Sentimental Engineer DOT Indonesia dalam mencari panduan  <span class="line-through">hidup</span> <span class="italic font-semibold">"get sh*t done"</span>.</p>
 
             <div class="flex my-10">
-                <a href="/docs/company/profile" title="{{ $page->siteName }} getting started" class="bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">Mulai</a>
+                <a href="/docs/company/profile" title="{{ $page->siteName }} getting started" class="bg-brand-500 hover:bg-brand-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">Mulai</a>
 
                 <a href="https://dot.co.id" title="About DOT Indonesia" class="bg-gray-400 hover:bg-gray-600 text-blue-900 font-normal hover:text-white rounded py-2 px-6">Tentang DOT Indonesia</a>
             </div>

@@ -5,15 +5,15 @@ body {
 a {
     @apply .font-semibold;
     @apply .no-underline;
-    @apply .text-blue-600;
+    @apply .text-brand-600;
 
     &:hover {
-        @apply .text-blue-800;
+        @apply .text-brand-800;
     }
 }
 
 blockquote {
-    @apply .border-blue-400;
+    @apply .border-brand-400;
     @apply .border-l-4;
     @apply .font-normal;
     @apply .italic;
