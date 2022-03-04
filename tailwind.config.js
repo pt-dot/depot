@@ -1,6 +1,20 @@
 module.exports = {
   theme: {
     extend: {
+      colors: {
+        // generated with https://colordesigner.io/ from color #29AB01
+        brand: {
+          100: '#ccffbc',
+          200: '#98fe79',
+          300: '#65fe35',
+          400: '#39ee01',
+          500: '#29AB01',
+          600: '#218901',
+          700: '#196701',
+          800: '#104400',
+          900: '#082200',
+        }
+      },
       fontFamily: {
         sans: [
           'Nunito Sans'
@@ -46,7 +60,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    function({ addUtilities }) {
+    function ({ addUtilities }) {
       const newUtilities = {
         '.transition-fast': {
           transition: 'all .2s ease-out',
