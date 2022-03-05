@@ -40,8 +40,8 @@ Kami terinspirasi oleh Agile Manifesto yang kami adaptasi menjadi filosofi perus
 DOT Indonesia memiliki 2 kantor, *Head Office* di Jakarta yang menangani operasional, finance, legal, dan marketing, sementara *DOT Techno Valley* di Malang menangani project, engineering, serta *people development*.
 
 ### Head Office
-- **Alamat**: Graha Iska lt. 6, Jl. Pramuka no. 165, Jakarta Pusat
-- **Telepon**: +62 21 278 999 09
+- **Alamat**: Millennium Centennial Center, 38th floor, Jl. Jenderal Sudirman No.Kav. 25, Kuningan, Karet, Kecamatan Setiabudi, Kota Jakarta Selatan, DKI Jakarta 12920
+- **Telepon**: +62 21 278 999 09 
 - **Email**: dearpartner@dot.co.id
 - **Website**: [https://wwww.dot.co.id](https://wwww.dot.co.id)
 
