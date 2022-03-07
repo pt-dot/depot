@@ -1,7 +1,7 @@
 ---
 title: DOT Indonesia
 description: Profil Perusahaan DOT Indonesia
-extends: _layouts.documentation
+extends: _layouts.profile
 section: content
 ---
 
