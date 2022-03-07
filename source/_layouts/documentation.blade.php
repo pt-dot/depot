@@ -9,7 +9,7 @@
     <img src="/assets/images/banner.jpg" class="w-full" />
     <div class="absolute z-10 bottom-0 w-full">
         <div class="container max-w-8xl mx-auto px-6 md:px-8 py-5">
-            <div class="text-2xl font-bold text-white">
+            <div class="text-3xl font-bold text-white">
                 Profile
             </div>
         </div>
