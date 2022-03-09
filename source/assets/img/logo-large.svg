@@ -1,34 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="318px" height="350px" viewBox="0 0 318 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 2</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <linearGradient x1="-83.2348064%" y1="106.401351%" x2="140.023112%" y2="-13.2029998%" id="linearGradient-1">
-            <stop stop-color="#F8FAFC" offset="0%"></stop>
-            <stop stop-color="#F8FAFC" offset="21.7972142%"></stop>
-            <stop stop-color="#BBDBF5" offset="100%"></stop>
-            <stop stop-color="#B9DAF5" offset="100%"></stop>
-        </linearGradient>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="04-docs-start-copy-3" transform="translate(-714.000000, -205.000000)">
-            <g id="Group-2" transform="translate(714.000000, 205.000000)">
-                <path d="M159.9,41.23566 L29.5,106.216315 L29.5,268.671884 L159.9,333.652539 L290.3,268.671884 L290.3,106.216315 L159.9,41.23566 Z" id="Rectangle-3-Copy" stroke="#B9DAF5"></path>
-                <polygon id="Rectangle-3-Copy-2" fill="url(#linearGradient-1)" points="129.8 186.334516 129.8 349.670807 0 284.336291 0 121"></polygon>
-                <path d="M317.3,186.64261 L188.5,121.811441 L188.5,284.028197 L317.3,348.859366 L317.3,186.64261 Z" id="Rectangle-3-Copy-4" stroke="#338CD6" transform="translate(252.900000, 235.335404) scale(1, -1) translate(-252.900000, -235.335404) "></path>
-                <path d="M159.9,41.2359725 L30.1185393,106.090062 L159.9,170.944152 L289.681461,106.090062 L159.9,41.2359725 Z" id="Rectangle-3" stroke="#B9DAF5"></path>
-                <path d="M159.9,0.558953879 L30.1185393,65.4130435 L159.9,130.267133 L289.681461,65.4130435 L159.9,0.558953879 Z" id="Rectangle-3-Copy-3" stroke="#338CD6"></path>
-                <path d="M160.175,170.953416 L160.175,332.562112" id="Line" stroke="#B9DAF5" stroke-linecap="square" fill-rule="nonzero"></path>
-                <path d="M160.358333,130.484509 L160.358333,165.798482" id="Line-2-Copy-3" stroke="#C7CFDA" stroke-linecap="square" stroke-dasharray="2,4" fill-rule="nonzero"></path>
-                <path d="M290.158333,68.178117 L290.158333,103.49209" id="Line-2-Copy-4" stroke="#C7CFDA" stroke-linecap="square" stroke-dasharray="2,4" fill-rule="nonzero"></path>
-                <path d="M133.55,185.742236 L159.95,172.549689" id="Line-2" stroke="#C7CFDA" stroke-linecap="square" stroke-dasharray="2,4" fill-rule="nonzero"></path>
-                <path d="M133.55,348.742236 L159.95,335.549689" id="Line-2-Copy" stroke="#C7CFDA" stroke-linecap="square" stroke-dasharray="2,4" fill-rule="nonzero"></path>
-                <path d="M292.35,283.586957 L318.75,270.39441" id="Line-2" stroke="#C7CFDA" stroke-linecap="square" stroke-dasharray="2,4" fill-rule="nonzero" transform="translate(305.550000, 276.990683) scale(1, -1) translate(-305.550000, -276.990683) "></path>
-                <path d="M162.55,348.742236 L188.95,335.549689" id="Line-2-Copy-2" stroke="#C7CFDA" stroke-linecap="square" stroke-dasharray="2,4" fill-rule="nonzero" transform="translate(175.750000, 342.145963) scale(1, -1) translate(-175.750000, -342.145963) "></path>
-                <path d="M291.55,119.742236 L317.95,106.549689" id="Line-2-Copy" stroke="#C7CFDA" stroke-linecap="square" stroke-dasharray="2,4" fill-rule="nonzero" transform="translate(304.750000, 113.145963) scale(1, -1) translate(-304.750000, -113.145963) "></path>
-                <path d="M162.55,185.742236 L188.95,172.549689" id="Line-2-Copy-5" stroke="#C7CFDA" stroke-linecap="square" stroke-dasharray="2,4" fill-rule="nonzero" transform="translate(175.750000, 179.145963) scale(1, -1) translate(-175.750000, -179.145963) "></path>
-            </g>
-        </g>
-    </g>
+<svg width="320" height="352" viewBox="0 0 320 352" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M30.5 269.691V106.812L159.5 171.808V334.191L30.5 269.691Z" stroke="#29AA00"/>
+<path d="M288.5 269.691V106.812L159.5 171.808V334.191L288.5 269.691Z" stroke="#A5DA94" stroke-linejoin="bevel"/>
+<path d="M0 122L130 187.5V351L0 286V122Z" fill="url(#paint0_linear_1_28)"/>
+<path d="M319 122L189 187.5V351L319 286V122Z" stroke="#29AA00"/>
+<path d="M30.118 65.5017L160.498 0.559451L288.889 65.4983L159.5 130.441L30.118 65.5017Z" stroke="#29AA00"/>
+<mask id="path-6-inside-1_1_28" fill="white">
+<path d="M160.5 41L289 106V107.002L159.5 172L30 107.002V106L160.5 41Z"/>
+</mask>
+<path d="M160.5 41L160.951 40.1077L160.054 40.1049L160.5 41ZM289 106H290L289.451 105.108L289 106ZM159.5 172L159.051 172.894H159.949L159.5 172ZM30 106L29.5542 105.105C29.2146 105.274 29 105.621 29 106H30ZM30 107.002H29L29.5514 107.896L30 107.002ZM289 107.002L289.449 107.896L290 107.002H289ZM160.049 41.8923L288.549 106.892L289.451 105.108L160.951 40.1077L160.049 41.8923ZM30.4458 106.895L160.946 41.8951L160.054 40.1049L29.5542 105.105L30.4458 106.895ZM159.949 171.106L30.4486 106.108L29.5514 107.896L159.051 172.894L159.949 171.106ZM31 107.002V106H29V107.002H31ZM288 106V107.002H290V106H288ZM288.551 106.108L159.051 171.106L159.949 172.894L289.449 107.896L288.551 106.108Z" fill="#A5DA94" mask="url(#path-6-inside-1_1_28)"/>
+<line x1="159.5" y1="131" x2="159.5" y2="171" stroke="#C4C4C4" stroke-dasharray="3 3"/>
+<line x1="289.5" y1="66" x2="289.5" y2="106" stroke="#C4C4C4" stroke-dasharray="3 3"/>
+<line x1="288.316" y1="106.653" x2="317.719" y2="121.634" stroke="#C4C4C4" stroke-width="0.6" stroke-dasharray="3 3"/>
+<line x1="288.316" y1="269.653" x2="317.719" y2="284.634" stroke="#C4C4C4" stroke-width="0.6" stroke-dasharray="3 3"/>
+<line x1="161.136" y1="172.733" x2="189.648" y2="187.26" stroke="#C4C4C4" stroke-width="0.6" stroke-dasharray="3 3"/>
+<line x1="161.136" y1="335.733" x2="189.648" y2="350.26" stroke="#C4C4C4" stroke-width="0.6" stroke-dasharray="3 3"/>
+<line y1="-0.3" x2="33" y2="-0.3" transform="matrix(-0.891007 0.453991 0.453991 0.891007 159.402 173)" stroke="#C4C4C4" stroke-width="0.6" stroke-dasharray="3 3"/>
+<line y1="-0.3" x2="33" y2="-0.3" transform="matrix(-0.891007 0.453991 0.453991 0.891007 159.402 335)" stroke="#C4C4C4" stroke-width="0.6" stroke-dasharray="3 3"/>
+<defs>
+<linearGradient id="paint0_linear_1_28" x1="65" y1="122" x2="80.5" y2="395" gradientUnits="userSpaceOnUse">
+<stop stop-color="#29AA00" stop-opacity="0.28"/>
+<stop offset="1" stop-color="#29AA00" stop-opacity="0"/>
+</linearGradient>
+</defs>
 </svg>

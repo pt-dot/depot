@@ -1,15 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="37px" height="34px" viewBox="0 0 37 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>terminal</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <g id="04-docs-start-copy-3" transform="translate(-497.000000, -699.000000)">
-            <g id="terminal" transform="translate(497.000000, 700.000000)">
-                <polyline id="Shape" stroke="#318AD3" points="0 27 14 13.5 0 0"></polyline>
-                <path d="M18,32 L36,32" id="Shape" stroke="#748294"></path>
-            </g>
-        </g>
-    </g>
+<svg width="49" height="44" viewBox="0 0 49 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.792896 0.292893C1.18342 -0.0976311 1.81659 -0.0976311 2.20711 0.292893L20.2071 18.2929C20.3981 18.4839 20.5038 18.7441 20.4999 19.0143C20.496 19.2844 20.383 19.5415 20.1866 19.727L2.18663 36.727C1.78511 37.1062 1.1522 37.0881 0.772989 36.6866C0.393778 36.2851 0.411861 35.6522 0.813379 35.273L18.0653 18.9795L0.792896 1.70711C0.402371 1.31658 0.402371 0.683417 0.792896 0.292893Z" fill="black"/>
+<rect x="24" y="42" width="25" height="2" fill="#29AA00"/>
 </svg>
