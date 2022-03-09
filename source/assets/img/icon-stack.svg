@@ -1,16 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="51px" height="44px" viewBox="0 0 51 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 7</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="04-docs-start-copy-3" transform="translate(-816.000000, -695.000000)">
-            <g id="Group-7" transform="translate(816.000000, 695.000000)">
-                <path d="M25.1572266,19.5799762 L1.12512399,31.5016008 L25.1572266,43.4232253 L49.1893291,31.5016008 L25.1572266,19.5799762 Z" id="Rectangle-3-Copy-3" stroke="#318AD3"></path>
-                <path d="M25.1572266,10.5986098 L1.12512399,22.5202343 L25.1572266,34.4418588 L49.1893291,22.5202343 L25.1572266,10.5986098 Z" id="Rectangle-3-Copy-5" stroke="#748294"></path>
-                <path d="M25.1572266,0.558141166 L1.12512399,12.4797657 L25.1572266,24.4013902 L49.1893291,12.4797657 L25.1572266,0.558141166 Z" id="Rectangle-3-Copy-6" stroke="#318AD3"></path>
-            </g>
-        </g>
-    </g>
+<svg width="47" height="42" viewBox="0 0 47 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 21L23.5 33L46.5 21L23.5 9L0 21ZM3.29832 21L23.4926 31.312L43.2572 21L23.4926 10.688L3.29832 21Z" fill="#1E2739"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 12L23.5 0L46.5 12L29.25 21L46.5 30L23.5 42L0 30L17.625 21L0 12ZM19.2742 21.8421L3.29832 30L23.4926 40.312L43.2572 30L27.6286 21.8459L23.5 24L19.2742 21.8421ZM26.0072 21L23.4926 22.312L20.9233 21L23.4926 19.688L26.0072 21ZM27.6286 20.1541L23.5 18L19.2742 20.1579L3.29832 12L23.4926 1.68803L43.2572 12L27.6286 20.1541Z" fill="#29AA00"/>
 </svg>
