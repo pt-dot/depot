@@ -31,14 +31,51 @@ f. Gunakan fitur static analysis untuk code standard. Static analysis dapat diak
 
 g. Untuk pengguna IDE Visual Studio Code, aktifkan fitur prettier dari plugin Flutter.
 
-h. Constant (on progress)
+h. Usahakan naming, formatting, dan code structure selalu konsisten dan rapi. Kalau perlu, diskusikan terlebih dahulu dengan tim sebelum memulai project.
 
-i. Helper (on progress)
+i. Gunakan state management seperti BloC atau yang lain sesuai dengan kebutuhan project.
 
-j. Code Separation (on progress)
+j. Folder Structure
 
-k. Folder Structure (on progress)
+```bash
+├── lib
+│   ├── core
+│   │   ├── blocs
+│   │   │   ├── auth
+│   │   │   │   ├── login_bloc.dart
+│   │   ├── events
+│   │   │   ├── auth
+│   │   │   │   ├── login_event.dart
+│   │   ├── models
+│   │   │   ├── login_model.dart
+│   │   ├── networks
+│   │   │   ├── api_service.dart
+│   │   ├── repositories
+│   │   │   ├── auth_repository.dart
+│   │   ├── routes
+│   │   │   ├── app_route.dart
+│   │   ├── states
+│   │   │   ├── auth
+│   │   │   │   ├── login_state.dart
+│   ├── ui
+│   │   ├── screens
+│   │   │   ├── home
+│   │   │   │   ├── home_screen.dart
+│   │   │   ├── auth
+│   │   │   │   ├── widgets
+│   │   │   │   │   ├── email_input.dart
+│   │   │   │   │   ├── password_input.dart
+│   │   │   │   ├── login_screen.dart
+│   │   ├── shared
+│   │   │   ├── base_button.dart
+│   │   │   ├── base_textfield.dart
+│   │   │   ├── base_image_view.dart
+│   │   │   ├── detail.blade.php
+│   ├── utils
+│   │   ├── app_helper.dart
+│   │   ├── datepicker_helper.dart
 
+```
 
 
 ## 2. Package & Libraries
