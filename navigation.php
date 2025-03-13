@@ -34,7 +34,8 @@ return [
                     'Frontend Engineering' => [
                         'children' => [
                             'Panduan Frontend Engineering' => 'docs/engineering/frontend-guidelines',
-                            'Panduan React JS' => 'docs/engineering/reactjs-guidelines',
+                            'Panduan Next JS Typescript' => 'docs/engineering/frontend/nextjs-typescript-guidelines',
+                            'Panduan Vite Typescript' => 'docs/engineering/frontend/vite-typescript-guidelines',
                         ]
                     ],
                     'Mobile Engineering' => [
